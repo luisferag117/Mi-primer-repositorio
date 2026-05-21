@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    table, th, td{
+        border: .02px solid black;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis">
+    <meta name="description" content="Apuntes de Etiquetas">
+    <title>Apuntes de Etiquetas</title>
+</head>
+<body>
+    <header>
+        <h1 style="color: red;" align="center">Apuntes de Etiquetas</h1>
+        <p>Luis Pablo Fernández Aguirre</p>
+    </header>
+    <main>
+        <table>
+                <caption>5 etiquetas vistas en clase</caption>
+                <colgroup>
+                    <col style="width:200px">
+                    <col style="width:200px">
+                    <col style="width:200px;">
+                </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Etiqueta</th>
+                <th scope="col">Para qué sirve</th>
+                <th scope="col">Ejemplo mínimo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><code>&lt;code&gt;</code></td><td>Sirve para maquetar código en html</td>
+                <td><pre><code>
+                &lt;code&gt;
+                    #include &lt;stdio.h&gt;
+                        int main() {             
+                        }
+                        return 0;
+                &lt;code/&gt;
+                </code></pre>
+            </td>
+            </tr>
+            <tr>
+                <td><code>&lt;h1&gt;</code>
+                </td><td>Significa Head 1 , es el título más grande</td>
+            <td><pre><code>&lt;h1&gt;Este es un título&lt;h1/&gt;</code></pre><h1>Este es un titulo</h1></td>
+            </tr>
+            <tr>
+                <td><code>&lt;colgroup&gt;</code>
+                </td><td>En una tabla, se refiere a utilizar el grupo de "N" Columnas</td>
+            <td><pre><code>&lt;colgroup&gt;&lt;col style="width:5%"&gt;&lt;colgroup&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td><code>&lt;ol&gt; &lt;li&gt;</code>
+                </td><td>Es una lista organizada, enumerada o con letras. List Item, es el elemento de la lista</td>
+            <td><pre><code>
+                &lt;ol&gt;
+                    &lt;li&gt;Elemento 1&lt;/li&gt;
+                    &lt;li&gt;Elemento 2&lt;/li&gt;
+                    &lt;li&gt;Elemento 3&lt;/li&gt;
+                &lt;ol/&gt;</code></pre>
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ol>
+            </td>
+            </tr>
+            <tr>
+                <td><code>&lt;header&gt;</code>
+                </td><td>Se refiere al encabezado de la página, lo que está hasta arriba</td>
+            <td><pre><code>&lt;header&gt;Este es un encabezado&lt;header/&gt;</code></pre></td>
+            </tr>
+        </tbody>
+        </table>
+    </main>
+</body>
+</html>
